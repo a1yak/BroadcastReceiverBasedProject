@@ -5,11 +5,17 @@ plugins {
 
 android {
     compileSdk 32
+    dataBinding {
+        enabled = true
+    }
+    buildFeatures {
+        viewBinding = true
+    }
 
     defaultConfig {
         applicationId "com.example.broadcastreceivercustomproject"
         minSdk 21
-        targetSdk 32
+        targetSdk 21
         versionCode 1
         versionName "1.0"
 
